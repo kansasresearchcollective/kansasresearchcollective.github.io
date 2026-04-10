@@ -39,6 +39,10 @@ a {
             font-size: 20px;
         }
 
+            nav a:hover {
+                color: #dfdede;
+            }
+
     .placeholder {
         display: flex;
         justify-content: center;
