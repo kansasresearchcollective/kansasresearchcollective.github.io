@@ -146,7 +146,8 @@ a {
                 margin-bottom: 50px;
                 border: 1px solid #000000;
                 border-radius: 15px;
-                padding: 40px;
+                padding: 30px 40px;
+                min-width: 722px;
 
                 transition: 
                     transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
