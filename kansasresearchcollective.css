@@ -175,7 +175,15 @@ a {
                 .ats {
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
+                    gap: 12px;
+                    width: 100%;
                 }
+
+                    .ats .name {
+                        flex: 1;
+                        min-width: 0;
+                    }
                 
                     .mini-linkedin {
                         height: 32px;
