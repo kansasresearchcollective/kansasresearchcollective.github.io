@@ -188,6 +188,7 @@ a {
 
                 .member-info {
                     max-width: 525px;
+                    width: 100%;
                     color: rgb(88, 87, 87);
                 }
 
@@ -428,6 +429,7 @@ a {
             .right.active a:nth-child(4) { transition-delay: 0.4s; }
             .right.active a:nth-child(5) { transition-delay: 0.5s; }
 
+            /* Team page: stack headshot above name/bio */
             .team-member {
                 flex-direction: column;
                 align-items: center;
@@ -449,9 +451,11 @@ a {
                 max-width: 100%;
             }
 
+            /* Events page: stack circle above label/subtext */
             .events-feature {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
+                text-align: center;
                 margin: 40px auto;
                 padding: 0 30px;
             }
@@ -463,5 +467,6 @@ a {
             .events-feature-text,
             .events-feature-subtext {
                 margin-left: 0;
+                text-align: center;
             }
     }
