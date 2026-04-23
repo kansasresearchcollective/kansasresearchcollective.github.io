@@ -14,7 +14,7 @@
 <body>
     <nav>
         <div class="left">
-            <a href="index.html">Kansas Research Collective</a>
+            <a href="kansasresearchcollective.html">Kansas Research Collective</a>
         </div>
 
         <div class="right">
@@ -24,13 +24,15 @@
             <a href="contact.html">Contact</a>
             <a href="https://www.instagram.com/ku.researchcollective/">Join Us</a>
         </div>
+
+        <div class="menu-toggle">☰</div>
     </nav>
 
     <section class="about">
         <h1 class="home-title">About</h1>
 
-        <p class="home-text">The Kansas Research Collective is a <b></b>multidisciplinary research collective built for and by Kansas students. While the Kansas Research Collective is hosted by the University of Kansas’ Lawrence Campus and operates in close collaboration with its 
-            <a href="https://curf.ku.edu/">Center for Undergraduate Research & Fellowships</a>,
+        <p class="home-text">The Kansas Research Collective (KRC) is a <b></b>multidisciplinary research collective built for and by Kansas students. While the Kansas Research Collective is hosted by the University of Kansas’ Lawrence Campus and operates in close collaboration with its 
+            <a href="https://curf.ku.edu/">Center for Undergraduate Research & Fellowships (CURF)</a>,
             we are committed to serving all students in the state of Kansas and welcome those from other institutions.</p>
 
         <div class="curfxkrc">
@@ -49,7 +51,7 @@
     <section class="mission">
         <h1 class="home-title">Mission</h1>
 
-        <p class="home-text">The mission of the Kansas Research Collective is to foster a research community across the state of Kansas by providing peer mentorship and a platform for students to discuss and showcase their work.</p>
+        <p class="home-text">The mission of the KRC is to foster a research community across the state of Kansas by providing peer mentorship and a platform for students to discuss and showcase their work.</p>
     </section>
 
     <div class="home-img-wrapper">
@@ -58,8 +60,12 @@
 
     <section class="announcements">
         <h1 class="home-title">Announcements</h1>
-        
-        <p class="home-text"></p>
+
+        <p class="home-text">Keep an eye out for event dates as we approach fall semester...</p>
+
+        <div class="events-cal">
+            <iframe src="https://calendar.google.com/calendar/embed?src=9a120b079e05b0d36bc4d9bdc95cb66736c090de2f81095980ea0979513bf226%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
     </section>
 
     <footer>
@@ -79,3 +85,13 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.right');
+
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        toggle.classList.toggle('active');
+    });
+</script>
