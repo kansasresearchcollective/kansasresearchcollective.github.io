@@ -14,7 +14,7 @@
 <body>
     <nav>
         <div class="left">
-            <a href="index.html">Kansas Research Collective</a>
+            <a href="kansasresearchcollective.html">Kansas Research Collective</a>
         </div>
 
         <div class="right">
@@ -22,11 +22,57 @@
             <a href="journal.html">Journal</a>
             <a href="team.html">Team</a>
             <a href="contact.html">Contact</a>
-            <a href="https://www.instagram.com/ku.researchcollective/">Join Us</a>
+            <a id="joinus" href="https://www.instagram.com/ku.researchcollective/">Join Us</a>
         </div>
+
+        <div class="menu-toggle">☰</div>
     </nav>
 
-    <p class="placeholder">Details coming soon...</p>
+    <section class="events">
+        <section class="CURF-ambassador-program">
+            <h1>CURFxKRC Ambassador Program</h1>
+
+            <p class="events-text">The CURFxKRC Ambassador Program empowers students to be research advocates by preparing them to assume an ambassadorial role at the CURF and across campus.</p>
+            <br>
+            <p class="events-text">Interested in becoming an ambassador this fall? Don't hesitate to <a href="contact.html">reach out</a>.</p>
+
+            <div class="events-feature">
+                <div class="circle fade logo1">01</div>
+
+                <div class="events-feature-content">
+                    <p class="events-feature-text">Outreach</p>
+                    <p class="events-feature-subtext">Promote CURF and KRC resources in lectures and at campus-wide events like Union Fest and the Undergraduate Research Symposium.</p>
+                </div>
+            </div>
+
+            <div class="events-feature">
+                <div class="circle fade logo2">02</div>
+
+                <div class="events-feature-content">
+                    <p class="events-feature-text">Mentorship</p>
+                    <p class="events-feature-subtext">Mentor high school students and first-year undergraduate students that are interested in conducting research in your discipline.</p>
+                </div>
+            </div>
+
+            <div class="events-feature">
+                <div class="circle fade logo3">03</div>
+
+                <div class="events-feature-content">
+                    <p class="events-feature-text">Office Hours</p>
+                    <p class="events-feature-subtext">Host office hours and workshops that prepare students to publish and present their research at the University of Kansas and beyond.</p>
+                </div>
+            </div>
+
+            <p class="events-text">Have a question about an application or project? Stop by our CURFxKRC Ambassador Office Hours.</p>
+
+            <div class="office-hours-cal">
+                <iframe src="https://calendar.google.com/calendar/embed?src=a3d99e14a5cf646447ccb7e750d7deaa0d423b23bed2384f9103fb05380d94c7%40group.calendar.google.com&ctz=America%2FChicago" 
+                        style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+            
+            <p class="events-text">The CURF Ambassador Program is exclusive to students attending the University of Kansas' Lawrence Campus.</p>
+        </section>
+    </section>
 
     <footer>
         <div class="footer">
@@ -46,3 +92,13 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.right');
+
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        toggle.classList.toggle('active');
+    });
+</script>
