@@ -14,7 +14,7 @@
 <body>
     <nav>
        <div class="left">
-            <a href="index.html">Kansas Research Collective</a>
+            <a href="kansasresearchcollective.html">Kansas Research Collective</a>
         </div>
 
         <div class="right">
@@ -24,6 +24,8 @@
             <a href="contact.html">Contact</a>
             <a href="https://www.instagram.com/ku.researchcollective/">Join Us</a>
         </div>
+
+        <div class="menu-toggle">☰</div>
     </nav>
 
     <section class="team">
@@ -99,7 +101,7 @@
             <img src="images/" class="headshot" alt="Hannah Cleveland">
             <div class="member-info">
                 <h2 class="name">Hannah Cleveland</h2>
-                
+
                 <p>Hannah is studying Applied Computing with a Concentration in Chemistry at KU.</p>
             </div>
         </div>
@@ -123,3 +125,13 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.right');
+
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        toggle.classList.toggle('active');
+    });
+</script>
