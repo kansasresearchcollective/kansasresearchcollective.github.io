@@ -14,7 +14,7 @@
 <body>
     <nav>
         <div class="left">
-            <a href="index.html">Kansas Research Collective</a>
+            <a href="kansasresearchcollective.html">Kansas Research Collective</a>
         </div>
 
         <div class="right">
@@ -24,12 +24,14 @@
             <a href="contact.html">Contact</a>
             <a href="https://www.instagram.com/ku.researchcollective/">Join Us</a>
         </div>
+
+        <div class="menu-toggle">☰</div>
     </nav>
 
     <section class="contact">
         <h1 id="contact-title">Contact Us</h1>
 
-        <form action="https://formspree.io/f/xdapqyjk" method="POST" class="contact-form">
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
             <label>Name</label>
             <input type="text" name="name" required>
 
@@ -41,7 +43,7 @@
 
             <button type="submit">Send Message</button>
         </form>
-        
+
         <img src="images/krc_v4.2-removebg.png" class="big-logo fade logo1" alt="KRC Logo">
     </section>
 
@@ -63,3 +65,13 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.right');
+
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        toggle.classList.toggle('active');
+    });
+</script>
